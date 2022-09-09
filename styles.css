@@ -1,41 +1,62 @@
 body {
-	background: black;
+	background-color: #171717;
+	font-size: 18px;
+	font-family: "Times New Roman", Times, serif;
 }
 .postcard {
 	background: white;
-	width: 400px;
-	height: 300px;
+	width: 500px;
+	height: 330px;
 	margin: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	padding: 15px;
 }
 .postcard-header {
-	display: flex;
+	overflow: hidden;
 }
 .postcard-header img {
-	width: 50px;
-	height: 50px;
-}
-.postcard-header h1 {
-	width: 400px;
-	margin: 0px;
+	max-width: 60px;
+	float: right;
 }
 .postcard-body {
-	display: flex;
-}
-.body-left p:first-child {
-	margin-top: 0;
-}
-.body-left,
-.body-right {
-	padding: 10px;
+	overflow: hidden;
 }
 input {
+	font-size: 18px;
+	font-family: "Times New Roman", Times, serif;
+}
+.postcard h1 {
+	margin: 0;
+}
+.left-side {
+	float: left;
+	width: 50%;
+}
+.right-side {
+	float: right;
+	width: 50%;
+}
+.right-side input {
+	display: block;
 	border: none;
-	border-bottom: grey;
+	border-bottom: 1px solid gray;
+	width: 250px;
+	padding: 8px;
+	font-family: "Times New Roman", Times, serif;
 }
 .postcard-footer {
 	text-align: center;
+	font-family: "Times New Roman", Times, serif;
 }
 button {
-	background-color: darker;
+	background-color: rgb(167, 162, 162);
 	padding: 10px;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 18px;
+}
+h1 {
+	font-size: 40px;
 }
